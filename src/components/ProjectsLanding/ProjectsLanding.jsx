@@ -73,7 +73,7 @@ function Project(){
                         </div>
                         <div className="modal-nav">
                             <a className="modal-nav-btn" href={project.url}>Check It Out</a>
-                            <a className="modal-nav-btn" href={project.url}>Source Code</a>
+                            <a className="modal-nav-btn" href={project.code}>Source Code</a>
                         </div>
                     </div>
                     </>
