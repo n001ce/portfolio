@@ -21,7 +21,7 @@ export const ProjectsData = [
     ],
         cName: 'proj-card',
         issues: "Finding a way to display stat info pulled from 3rd party API",
-        fixes: "Utilized CSS Grid to create a new full page table layout for data display",
+        solutions: "Utilized CSS Grid to create a new full page table layout for data display",
         l_learned:"API Integration, Routing, CSS Grid",
     },
     {
@@ -39,7 +39,7 @@ export const ProjectsData = [
         ],
         cName: 'proj-card',
         issues: "Communication issues with team members caused a stall in the production time line.",
-        fixes: "Conducted a group meeting to squash any issues we had and go over problems we ran into on our sections together.",
+        solutions: "Conducted a group meeting to squash any issues we had and go over problems we ran into on our sections together.",
         l_learned:"Team cooperation, React, Material UI, GitHub Workflow.",
     },
     {
@@ -56,7 +56,7 @@ export const ProjectsData = [
         ],
         cName: 'proj-card',
         issues: "Finding a way to create different quizes with the same object",
-        fixes: "Utilized OOP to create a quiz object that contains questions and answers that can be utilized by multiple objects.",
+        solutions: "Utilized OOP to create a quiz object that contains questions and answers that can be utilized by multiple objects.",
         l_learned:"DOM Manipulation",
     },
     {
@@ -75,7 +75,7 @@ export const ProjectsData = [
         ],
         cName: 'proj-card',
         issues: "Finding a way to create different user roles for signed up users.",
-        fixes: "Utilized custom user models to create different roles",
+        solutions: "Utilized custom user models to create different roles",
         l_learned:"PostgresSQL Integration, ERD Design, Custom User Models",
     },
     
