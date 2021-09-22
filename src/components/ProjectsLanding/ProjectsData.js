@@ -56,8 +56,8 @@ export const ProjectsData = [
         ],
         cName: 'proj-card',
         issues: "Finding a way to create different quizes with the same object",
-        fixes: "",
-        l_learned:"",
+        fixes: "Utilized OOP to create a quiz object that contains questions and answers that can be utilized by multiple objects.",
+        l_learned:"DOM Manipulation",
     },
     {
         title: 'Kennel_Master',
@@ -74,9 +74,9 @@ export const ProjectsData = [
 
         ],
         cName: 'proj-card',
-        issues: "",
-        fixes: "",
-        l_learned:"",
+        issues: "Finding a way to create different user roles for signed up users.",
+        fixes: "Utilized custom user models to create different roles",
+        l_learned:"PostgresSQL Integration, ERD Design, Custom User Models",
     },
     
     
