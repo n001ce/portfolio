@@ -68,7 +68,7 @@ function Project(){
                                 <h1>Solutions</h1>
                             </div>
                             <div className="solutions_data">
-                                <p>{project.issues}</p>
+                                <p>{project.solutions}</p>
                             </div>
                         </div>
                         <div className="modal-nav">
