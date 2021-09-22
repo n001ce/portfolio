@@ -1,0 +1,215 @@
+#projects{
+    padding: 30px;
+    font-family: 'Source Code Pro';
+    display: grid;
+    grid-template-areas: "left-side right-side";
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 5%;
+    box-shadow: rgba(35, 36, 37, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 75vh;
+    background-color: rgba(12, 12, 12, 0.445);
+    width: 92vw;
+    font-family: 'Amatic SC';
+    
+}
+
+
+
+
+
+.proj-modal{
+    grid-area: right-side;
+    visibility:hidden;
+
+}
+
+.proj-modal, .proj-card-container{
+    box-shadow: rgba(35, 36, 37, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+}
+
+.modal-nav{
+    grid-area: modal-nav;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 1em;
+}
+
+.proj-modal.active{
+    grid-area: right-side;
+    visibility: unset;
+    display: grid;
+    grid-template-areas: "modal-head""modal-content""modal-nav";
+    grid-template-rows: .25fr 1fr .125fr;
+    height: 100%;
+    width: 100%;
+    color: white;
+    transition: 850ms;
+    box-shadow: rgba(172, 172, 172, 0.377) 0px 3px 8px;
+    border-radius: 10px;
+    border: 2px solid rgba(37, 37, 37, 0.377);
+    background-color:rgba(66, 65, 65, 0.301);
+
+}
+
+
+.proj-card{
+    height: auto;
+    width: 100%;
+    box-shadow: rgba(31, 30, 30, 0.822);
+
+}
+
+.proj-card:hover{
+    transform:scale(150%)
+}
+
+.proj-card a{
+    height: 160px;
+}
+
+.modal-head{
+    grid-area: modal-head;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    font-size: 1.5em;
+}
+
+.modal-content{
+    grid-area: modal-content;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "proj_desc proj_desc"
+    "tech tech"
+    "issues issues_data"
+    "solutions solutions_data";
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr 1fr;
+}
+.tech{
+    grid-area: tech;
+}
+
+.proj_desc{
+    grid-area: proj_desc;
+}
+
+.issues{
+    grid-area: issues;
+}
+
+.issues_data{
+    grid-area: issues_data;
+}
+
+.solutions{
+    grid-area: solutions;
+}
+
+.solutions_data{
+    grid-area: solutions_data;
+}
+
+.modal-nav-btn{
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    text-decoration:none;
+    background:rgb(17, 17, 17);
+    font-size: 1rem;
+    border-radius: .25em;
+    text-align: center;
+    position: relative;
+    box-shadow: rgba(211, 208, 208, 0.24) 0px 3px 8px;
+
+}
+
+.slider{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: left-side;
+    top: 25%;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 30%;
+    right: 32px;
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow{
+    position: absolute;
+    top: 30%;
+    left: 32px;
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08)
+
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #projects{
+        font-family: 'Source Code Pro';
+        display: grid;
+        grid-template-areas: "left-side""right-side";
+        grid-template-rows: 1fr .75fr ;
+        box-shadow: rgba(35, 36, 37, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 75vh;
+        background-color: rgba(12, 12, 12, 0.445);
+        width: 62vw;
+        font-family: 'Amatic SC';
+        overflow-y:scroll;
+        
+    }
+    .slider{
+        grid-area: left-side;
+        margin: 0 auto;
+        width: 120%;
+    
+    }
+    .proj-modal.active{
+        grid-area: right-side;
+        height: 80%;
+        width: 120%;
+    
+    }
+  }    

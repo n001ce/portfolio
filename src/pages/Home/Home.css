@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+.home{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: ". . ." ". hero ." ". selections .";
+    grid-template-rows: .25fr 1.5fr .5fr;
+    grid-template-columns: .5fr 1.5fr .5fr;
+    background-color: rgba(104, 104, 104, 0.274);
+    font-family: 'Amatic SC';
+}
+
+.navbar{
+    grid-area: selections;
+}
+
+.navbar button{
+    margin: 0 auto;
+    width: 100%;
+    border-style: none;
+    font-size: 2em;
+    background-color: #66666663;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;    
+    border: 2px solid rgba(255, 255, 255, 0.363);
+    box-shadow: rgba(155, 155, 155, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 4px;
+    font-family: 'Amatic SC';
+}
+
+.navbar button:hover{
+    border: 3px solid rgba(255, 255, 255, 0.973);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    transform:scale(1.05);
+    background-color: rgba(111, 151, 238, 0.445);
+    color: purple;
+    animation:ease-in;
+    font-size: 2.5em;
+    text-shadow: 0px 4px 3px rgba(41, 41, 41, 0.589),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.hero_menu{
+    grid-area: hero;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "img" "head";
+    grid-template-rows: 1fr .5fr;
+}
+
+.hero_menu img{
+    grid-area: img;
+    display: flex;
+    margin: 0 auto;
+}
+
+.hero_head{
+    text-align: center;
+    grid-area: head;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.822);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
+}
+
+.modal{
+    background-color:rgba(41, 39, 39, 0.808);
+    height: 100%;
+    grid-area: hero;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal button{
+    display: flex;
+    font-size: 1.5em;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;    
+    font-family: 'Amatic SC';
+    border-style: none;
+}
+
+.modal button:hover{
+    transform:scale(1.05);
+    background-color: rgba(111, 151, 238, 0.445);
+    color: rgba(255, 255, 255, 0.973);
+    animation:ease-in;
+    font-size: 2.5em;
+    text-shadow: 0px 4px 3px rgba(41, 41, 41, 0.589),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .modal{
+        background-color:rgba(41, 39, 39, 0.808);
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .home{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas: ". . ." ". hero ." ". selections .";
+        grid-template-rows: .25fr 1.5fr .5fr;
+        grid-template-columns: .5fr 1.5fr .5fr;
+        background-color: rgba(104, 104, 104, 0.274);
+        font-family: 'Amatic SC';
+    }
+  }

@@ -1,0 +1,155 @@
+.contact{
+    padding: 30px;
+    font-family: 'Source Code Pro';
+    display: grid;
+    grid-template-areas: "left-side right-side";
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 5%;
+    box-shadow: rgba(35, 36, 37, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 75vh;
+    background-color: rgba(12, 12, 12, 0.712);
+    width: 92vw;
+    font-family: 'Amatic SC';
+}
+
+.contact-info{
+    grid-area: left-side;
+    display: grid;
+    grid-template-areas: "info-head" "info-content" "nav";
+}
+
+.contact-info-head{
+    grid-area: info-head;
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+
+}
+
+.contact-info-content{
+    grid-area: info-content;
+    margin: 100px;
+    display: grid;
+    align-items: center;
+    color: white;
+}
+
+a{
+    color: white;
+    font-size: 1.5em;
+    text-align: start;
+    display: inline-flex;
+    margin: 10px;
+}
+
+a:hover{
+    color: purple;
+}
+
+#contact-form{
+    background-color: rgba(53, 52, 52, 0.493);
+    grid-area: right-side;
+    display:grid;
+    grid-template-areas:
+    "cont-head"
+    "name"
+    "email"
+    "message"
+    "btn";
+    grid-template-rows: .5fr .5fr .5fr .5fr;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.contact-head{
+    grid-area: cont-head;
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+}
+
+
+
+.name {
+    grid-area: name;
+    display: inline-flex;
+}
+
+label{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+input{
+    margin-left: 40px;
+    width: 50%;
+    height: 10%;
+    background-color: rgba(44, 44, 44, 0.342);
+    color: white;
+}
+
+.email{
+    grid-area: email;
+    display: inline-flex;
+}
+
+
+
+
+.message{
+    grid-area: message;
+    display:inline-flex;
+}
+
+.message textarea{
+    margin-left: 40px;
+    height: 80%;
+    width: 80%;
+    margin-top: 10px;
+    resize: none;
+    background-color: rgba(44, 44, 44, 0.342);
+    color: white;
+
+}
+
+.form-btn{
+    grid-area:btn;
+    color: black;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .contact{
+        display: grid;
+        grid-template-areas: "left-side" "right-side";
+        grid-template-rows: 1fr 1fr ;
+        width: 62vw;
+        height: 75vh;
+        overflow-x: scroll;
+        grid-template-columns: none;
+        padding: none;
+    }
+
+    .contact-info{
+        grid-area: left-side;
+        width: 40vw;
+    }
+
+    .contact-info-content{
+        grid-area: info-content;
+        margin:0;
+        display: flexbox;
+        align-items: center;
+        color: white;
+        width: 50%;
+    }
+
+    a{
+        margin: none;
+        font-size: 1em;
+    }
+
+  }
