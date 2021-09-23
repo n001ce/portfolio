@@ -53,11 +53,12 @@ function Project(){
                             <div className="proj_desc">
                                 <p>{project.description}</p>
                             </div>
-                                {project.icons.forEach(icon=>{
-                                <div className="tech">
-                                    <p>{icon}</p>
-                                </div>
-                                })}
+                            <div className="tech">
+                                <h2>Tech Used</h2>
+                            </div>
+                            <div className="tech-con">
+                                {project.icons}
+                            </div>
                             <div className="issues">
                                 <h1>Issues</h1>
                             </div>

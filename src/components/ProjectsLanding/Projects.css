@@ -84,34 +84,59 @@
     display: grid;
     grid-template-areas: 
     "proj_desc proj_desc"
-    "tech tech"
+    "technology tech_icon"
     "issues issues_data"
     "solutions solutions_data";
     grid-template-columns: .5fr 1fr;
     grid-template-rows: 1fr .5fr 1fr 1fr;
 }
 .tech{
-    grid-area: tech;
+    grid-area: technology;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px;
 }
+
+.tech-con{
+    grid-area: tech_icon;
+    color: yellow;
+}
+
+.tech-con svg{
+    margin: 10px;
+    color: yellow;
+}
+
+
 
 .proj_desc{
     grid-area: proj_desc;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .issues{
     grid-area: issues;
+    font-size: 1.5em;
+    margin-left: 20px;
 }
 
 .issues_data{
     grid-area: issues_data;
+    font-size: 1.5em;
 }
 
 .solutions{
     grid-area: solutions;
+    font-size: 1.5em;
+    margin-left: 20px;
 }
 
 .solutions_data{
     grid-area: solutions_data;
+    font-size: 1.5em;
 }
 
 .modal-nav-btn{
