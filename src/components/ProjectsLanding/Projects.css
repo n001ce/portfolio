@@ -217,7 +217,6 @@
         display: grid;
         grid-template-areas: "left-side""right-side";
         grid-template-rows: 1fr .75fr ;
-        box-shadow: rgba(35, 36, 37, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         height: 75vh;
         background-color: rgba(12, 12, 12, 0.445);
         width: 62vw;
@@ -225,16 +224,41 @@
         overflow-y:scroll;
         
     }
-    .slider{
-        grid-area: left-side;
-        margin: 0 auto;
-        width: 120%;
-    
-    }
+
     .proj-modal.active{
+        margin-top: 20px;
         grid-area: right-side;
         height: 80%;
-        width: 120%;
+        width: 62vw;
     
     }
+    .tech-con svg{
+        height: 26%;
+        width: auto;
+    }
+    .modal-content{
+        grid-area: modal-content;
+        height: 100%;
+        width: 62vw;
+        display: grid;
+        grid-template-areas: 
+        "proj_desc"
+        "technology"
+        "tech_icon"
+        "issues"
+        "issues_data"
+        "solutions"
+        "solutions_data";
+        grid-template-rows: 1fr 100px 100px 100px 100px 100px 150px;
+    }
+
+    .proj_desc{
+        width: 62vw;
+    }
+
+    .tech, .issues, .solutions{
+        text-align: center;
+        margin: 0;
+    }
+
   }    
